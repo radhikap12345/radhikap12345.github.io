@@ -1,3 +1,5 @@
+Add this to config.yml...  for the theme ==== theme: jekyll-theme-cayman
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/radhikap12345/radhikap12345.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
