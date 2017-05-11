@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Radhika patil|Projects|CNC Programming </title>
+<link rel="stylesheet" type="text/css" media="all" href ="style.css" />
+</head>
+
+<body>
+<a name="linktotop"></a>
+<div class=wrapper>
+<div class ="Title">
+<h1>Radhika Patil</h1>
+<hr>
+</div>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="projects.html">Projects</a>
+  <a href="courses.html">Courses</a>
+  <a href="awards.html">Awards</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+<div class = subwrapper>
+<h2> CNC Proframming to manufacture gears on 3 axis CNC-VMC </h2>
+Guide: Prof. N Ramakrishnan
+<br><br>
+Traditionally gears are manufactured using gear hobbing and shaping which require 
+special machines. Gears are not manufactured on a 3 axis vertical milling centre (VMC) as 
+there is no feature to program the CNC milling machine to cut involute profiles
+ which are an essential part of a gear tooth. 
+This project enables manufacturing of gears on 3 axis CNC-VMC possible, by using CNC milling machine to 
+create involute shapes.<br>
+<figure>
+<img src="cnc1.png" alt="Gear profile">
+<figcaption>Fig 1: Gear Profile (involutes)</figcaption>
+</figure>
+<br>
+<figure>
+<img src="cnc2.png">
+<figcaption>Fig 2: Approximation of Involute of circle</figcaption>
+</figure>
+<br>
+This was accomplished by approximating the involute of a circle  by circular arcs. 
+<br>
+<figure>
+<img src="cnc3.png">
+<figcaption>Fig 3: Tolerancing</figcaption>
+</figure>
+<br>
+Tolerancing was used to maintain the quality of approximate profile.
+Varying tolerance range it was possible to program gears for various grades. 
+<br>
+An algorithm was developed that automatically generated the G-code for the a gear by inputting the diameter, module and desired grade of the gear.
+Table 1 shows the generated G-code for a single gear tooth
+<br>
+<figure>
+<img src="cnc4.png">
+<figcaption>Table 1: G Code generation</figcaption>
+</figure>
+<br>
+
+Single gear tooth simulated using the G-code from table<br>
+<img src="cnc5.png">
+<br>
+Entire gear simulated using  the proposed technique. 
+<br>
+<img src="cnc6.png">
+<br>
+<a href="projects.html"> Back </a>
+</div>
+<a href="#linktotop">Top</a>
+</div>
+&copy All rights reserved
+</body>
+</html>
