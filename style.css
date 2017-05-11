@@ -32,10 +32,6 @@ a:visited {
     color: blue;
 }
 
-/* mouse over link */
-a:hover {
-    color: grey;
-}
 
 div.Title{
 align:left;
