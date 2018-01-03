@@ -1,0 +1,1 @@
+python radsh.py data.csv template.html html

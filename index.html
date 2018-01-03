@@ -1,38 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Radhika Patil | Home </title>
-<link rel="stylesheet" type="text/css" media="all" href ="style.css" />
+
+<title>Radhika Patil</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="My Homepage!" name="description"/>
+<meta content="Radhika Patil" name="author"/>
+<meta name="theme-color" content="#333" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Niconne|Varela+Round|Roboto" rel="stylesheet"> 
+
+<script src="index.js"></script> 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-<div class=wrapper>
-<div class ="Title">
-<h1>Radhika Patil</h1>
-<hr>
-</div>
-<div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="projects.html">Projects</a>
-  <a href="courses.html">Courses</a>
-  <a href="awards.html">Awards</a>
-  <a href="contact.html">Contact</a>
+<body onload="loadB()">
+<div id="header-wrap">
+    <div id="header" class="topnav">
+        <div class="inner">
+            <a href="#home" class="link" id="homelink">HOME</a>
+            <a href="#about" class="link">ABOUT ME</a>
+            <a href="#activities" class="link">ACTIVITIES</a>
+            <a href="#contact" class="link">CONTACT</a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="handleResponsive()">&#9776;</a>
+        <div id="headname">Radhika Patil</div>
+    </div>
 </div>
 
-<div class = subwrapper>
-<div class=leftcol>
-<img src="radhika.jpg" style="height:300px">
+<span id="home"></span>
+<div class="bgimg-1">
+    <div class="caption">
+		<span class="mainsuperheading"> Hi! I'm </span><br>
+        <span class="mainheading">
+            --- Radhika Patil ---
+        </span>
+    </div>
 </div>
-<div class=rightcol>
-<h3> &nbsp &nbsp Education</h3>
-<ul>
-<li>MS Mechanical Engineering, <i>Stanford University (in progress)</i></li>
-<li>Bachelor of Technology, <i>Indian Institute of Technology Gandhinagar</i></li>
-  <i>Major:</i>Mechanical Engineering, <i>Minor:</i> Computer Science and Engineering
-</ul>
+
+<div id="bgimg-1Placeholder"></div>
+
+<span id="about"></span>
+<div id="content-1" style="width:100%; background-color:white;">
+    <div class="content" style="color: #777;">
+      <h2>About Me</h2>
+		<p>
+			<img id="portrait" src="radhika.jpg">
+			Hi I'm Radhika. I am studying Masters in Mechanical Engineering at Stanford University. I completed my graduation 
+			in Mechanical Engineering with minor in Computer Science from Indian Institute of Technology Gandhinagar.
+			
+		</p>
+	  
+	  <div style="clear:both;"></div>
+    </div>
 </div>
+
+<span id="activities"></span>
+<div class="bgimg-2">
+    <div class="caption">
+        <span class="mainheading">
+            Things i Do!
+        </span>
+    </div>
 </div>
+
+<div id="bgimg-2Placeholder"></div>
+
+<div id="content-2" style="position:relative;">
+  <div style="background-color:#fff; width:100%">
+  <div class="content">
+    <h2>Projects</h2>
+    <p class="bullet">
+		<a href="word2vec.html" class="linkheading">Word2Vec using Character n-grams</a><br>
+		<span class="linksubheading">Stanford University</span><br>
+		The traditional Word2Vec model has lead to significant improvements in the field of NLP, but has a limitation that good vector representations are not learned for: Rare words Words that are not seen in the training corpus This problem is more prominent in case of morphologically rich languages (e.g. German). To overcome these, we incorporated the information about the character n-grams that each word is made of into its vector representation and assess the performance of the vectors using intrinsic and extrinsic evaluation methods. 
+	</p>
+	<br>
+	<p class="bullet">
+		<a href="motionplanning.html" class="linkheading">Motion Planning in Unknown Environments</a><br>
+		<span class="linksubheading">Stanford University</span><br>
+		Autonomous navigation in unseen environments has many applications including disaster, rescue and exploration. In this project, we developed a method to obtain a path to a desired destination in an unseen environment based on local sensor data as input. We are using Q-learning approach to make an optimal decision. Q value is obtained from function approximation using a neural network. 
+	</p>
+	<br>
+	<p class="bullet">
+		<a href="cnc.html" class="linkheading">CNC Programming to manufacture gears on 3 axis CNC-VMC</a><br>
+		<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+		Gears are produced with gear hobbing machines or fancy CNC machine, but cannot be manufactured by a 3 axis vertical milling machine as there is no way to provide involute paths in a VMC, which are the main feature of any gear tooth. This project involved developing a technique to make this possible. With existing circular interpolation in a VMC, an approximation technique was developed to manufacture involute surfaces on a VMC. In order to maintain desired quality of the gear surface irrespective of approximation, tolerancing was used to develop a protocol for deciding the fineness and accuracy required during approximation.
+	</p>
+	<br>
+	<p class="bullet">
+		<img class="side_image" src="dih2.png">
+		<a href="dih.html" class="linkheading">Designing for Indian Healthcare</a><br>
+		<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+		The project analyzed conditions of construction workers in India carrying loads on their heads and its adverse effects on their health with an aim to design, develop and prototype of a solution for their major need.
+	</p>
+	<p class="bullet"></p>
+	<div id="extraprojects">
+		<br>
+		<p class="bullet">
+			<a class="linkheading d">Autothermal Reforming of Diesel Reaction Simulations</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			In order to operate hydrogen fuel cells as an energy source, a steady supply of Hydrogen is required. In limited resource environments like submarines, this Hydrogen could be obtained using autothermal reactions of hydrocarbon fuels. In order to obtain efficiency in this reaction, an optimum steam to oxygen ration is required for every fuel. This project involved autothermal reforming reaction simulations for Diesel to obtain this optimum ratio for Diesel. 
+		</p>
+		
+		<br>
+		<p>
+			<a class="linkheading d">Rendering and Animating 3D Graphics scenes</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			Used HTML and Three.js to create and animate the interior of a room scene with mirrors, lights and shadows 
+		</p>
+
+		<br>
+		<p>
+			<a href="MDO.html" class="linkheading">Molecular Dynamic Simulations of Silicon Nanowire</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			Using nano-scale heat transfer techniques and equations, MATLAB was used to simulate silicon nanowire structures. The heat transfer equations and boundary conditions were imposed on this nanowire structure to estimate the conductivity of the system using the Green-Kubo relation. 
+		</p>
+		
+		<br>
+		<p>
+			<a href="spptd.html" class="linkheading">Solar Paper Pulp Tile Dryer</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			Tiles manufactured using paper pulp are dried in furnace dryers requiring fuel. This project aimed to analyze the use of solar dryers for this purpose by analyzing weather data and evaporation rates.
+		</p>
+
+		<br>
+		<p>
+			<a class="linkheading d">Competency Profiles Mapping (OB&amp;HRM)</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			Generated competency profiles for administrative and non-administrative positions in IIT Gandhinagar through interviews to better understand organizational roles.
+		</p>
+		
+		<br>
+		<p>
+			<a class="linkheading d">Compression for Hindi Language Documents</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			Analyzed character frequencies from text documents in Hindi and implemented Huffman algorithm for compressing the documents using the analyzed frequencies 
+		</p>
+		
+		<br>
+		<p>
+			<a target="_blank" href="reports/EG.pdf" class="linkheading">Designing: Engineering Graphics</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			Project in Engineering Graphics to design a product
+		</p>
+		
+		<br>
+		<p>
+			<a class="linkheading d">Precession in spinning tops</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+			Analyzing the Lagrangians and understanding the role of precession as a stability mechanism
+		</p>
+		
+		<!--
+		<br>
+		<p>
+			<a class="linkheading">TITLE_HERE</a><br>
+			<span class="linksubheading">INSTITUTE_HERE</span><br>
+			DESCRIPTION_HERE
+		</p>
+		-->
+		
+	</div>
+	<p class="bullet">
+	<button class="readmoreslide" onclick="$('#extraprojects').slideDown('slow'); $(this).css('opacity','0')"> MORE </button>
+	</p>
+  </div>
+  </div>
+  
+  <div style="background-color:#eee; width:100%">
+  <div class="content" style="color:#444;">
+    <h2>Work Experience</h2>
+		<br>
+		<p>
+			<a href="UW.html" class="linkheading">Adhesion of Microspheres to Graphene Coated Substrates</a><br>
+			<span class="linksubheading">University of Washington</span><br>
+			Graphene is a two dimensional hexagonal lattice of carbon, only a single or few atomic layers thick. Transferring graphene to desired substrates is a challenge as it is fragile and invisible to naked eye. This project involved discovering a method to successfully transfer graphene to aluminum, and mount microspheres on the graphene using Langmuir-Blodgett method for self-assembly, which is a challenge due to graphene’s hydrophobic nature.
+		</p>
+		
+		<br>
+		<p>
+			<a class="linkheading d">CFD Simulations: Fontan Surgery</a><br>
+			<span class="linksubheading">Indian Institute of Technology, Bombay</span><br>
+			A Fontan heart surgery involves bypassing the right ventricle and diverting the blood from the IVC and SVC directly to the pulmonary arteries. This creates turbulence and energy loss in the flow. This summer internship involved creating CFD simulations of this blood flow using various offsets in the connections and analyzing the vortex formations and pressure distributions in the flow patterns. 
+		</p>
+		
+  </div>
+  </div>
+  
+  <div style="background-color:#fff; width:100%">
+  <div class="content">
+    <h2>Awards</h2>
+    <ul style="margin-left:-4%;">
+		<li>President's Gold Medal, 2016, IIT Gandhinagar</li>
+		<li>Institute Gold Medal, Mechanical Engineering, 2016, IIT Gandhinagar</li>
+		<li>Award for best performance in core courses of Humanities 2016, IIT Gandhinagar</li>
+		<li>Academic Excellence Award, Mechanical engineering 2015, 2014, 2013, IIT Gandhinagar</li>
+		<li>Dean's List Award, Fall 2012, 2013, 2014, 2015, Spring 2013, 2014, 2015, IIT Gandhinagar</li>
+		<li>Innovation in Science Pursuit for Inspired Research (INSPIRE) 2012 - Qualification for
+		Scholarship for Higher Education, Department of Science and Technology, Government of India</li>
+		<li>Kishore Vaigyanik Protsahan Yojana (KVPY) 2011 fellowship in science (Stream SA) 2011, Department of Science and Technology, Government of India</li>
+		<li>Regional Mathematical Olympiad (RMO) 2010 for Maharashtra and Goa region, Rank 20, National Board for Higher Mathematics, Government of India </li>
+		<li>National Talent Search Examination (NTSE) Scholarship 2008, National Council of Educational Research and Training (NCERT), Government of India</li>
+		<li>Maharashtra talent Search Examination (MTSE) 2010, State-wide Rank 14 in 108249
+		participants, Modern Education Society, Centre for Talent Search and Excellence</li>
+		<li>Maharashtra talent Search Examination (MTSE) 2008 State-wide Rank 15 in 65645
+		participants, Modern Education Society, Centre for Talent Search and Excellence</li>
+	</ul>
+  </div>
+  </div>
+  
+  <!-- 
+  <div style="background-color:#eee; width:100%">
+  <div class="content" style="color:#444;">
+    <h2>Extra Curricular</h2>
+	
+	<p class="bullet">
+		<div class="bullet">
+		<img class="side_image ec" src="dih2.png"></img>
+		<a class="linkheading">I eat donuts</a><br>
+		Bloop
+		</div>
+	</p>
+	
+	<p class="bullet">
+		<div class="bullet">
+		<img class="side_image ecr" src="dih2.png"></img>
+		<a class="linkheading">I lift bricks</a><br>
+		<span class="linksubheading">Indian Institute of Technology, Gandhinagar</span><br>
+		The project analyzed conditions of construction workers in India carrying loads on their heads and its adverse effects on their health with an aim to design, develop and prototype of a solution for their major need.
+		</div>
+	</p>
+	
+  </div>
+  <p class="bullet"></p>
+  </div>
+  -->
+  
 </div>
-&copy All rights reserved
+
+<span id="contact"></span>
+<div class="bgimg-3">
+  <div class="caption">
+        <span class="mainheading">
+            Get in Touch
+        </span>
+    </div>
+</div>
+
+<div id="bgimg-3Placeholder"></div>
+
+<div id="content-3" style="position:relative; width:100%; background-color:white;">
+  <div class="content" style="color: #777;">
+    You can reach me at
+    <p style="padding-left:4%">
+    <b>Radhika Patil</b><br>
+    Mechanical Engineering Department,<br>
+	Stanford University, <br>
+    Stanford, CA, 94305 <br>
+    </p>
+    
+	<a href="https://www.linkedin.com/in/radhikap12345/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:48px;color: #007bb6"></i></a>
+	<a href="https://www.facebook.com/radhikap12345" target="_blank"><i class="fa fa-facebook-official" style="font-size:48px;color:#3b5998"></i></a>
+	<a href="https://github.com/radhikap12345" target="_blank"><i class="fa fa-github" style="font-size:48px;color: #333"></i></a>
+	<br><br>
+    If you need to contact me, drop me an e-mail at <b>radhikap [at] stanford [dot] edu</b></p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+        <span class="mainheading">
+            Thanks for Scrolling
+        </span>
+		<span class="mainsuperheading"> 
+			<br>
+			all the way down here!
+		</span>
+    </div>
+</div>
+<div id="bgimg-4Placeholder"></div>
+
 </body>
 </html>

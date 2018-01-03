@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Radhika Patil | Projects | CNC Programming </title>
-<link rel="stylesheet" type="text/css" media="all" href ="style.css" />
+
+<title>CNC Programming to manufacture gears on 3 axis CNC-VMC - Radhika Patil</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="My Homepage!" name="description"/>
+<meta content="Radhika Patil" name="author"/>
+<meta name="theme-color" content="#333" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Niconne|Varela+Round|Roboto" rel="stylesheet"> 
+
+<script src="template.js"></script> 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-<a name="linktotop"></a>
-<div class=wrapper>
-<div class ="Title">
-<h1>Radhika Patil</h1>
-<hr>
-</div>
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a class="active" href="projects.html">Projects</a>
-  <a href="courses.html">Courses</a>
-  <a href="awards.html">Awards</a>
-  <a href="contact.html">Contact</a>
+<body onload="loadB()">
+<div id="header-wrap">
+    <div id="header" class="topnav">
+        <div class="inner">
+            <a href="index.html#home" class="linkt" id="homelink">HOME</a>
+            <a href="index.html#about" class="linkt">ABOUT ME</a>
+            <a href="index.html#activities" class="linkt">ACTIVITIES</a>
+            <a href="index.html#contact" class="linkt">CONTACT</a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="handleResponsive()">&#9776;</a>
+        <div id="headname">Radhika Patil</div>
+    </div>
 </div>
 
+<br>
 
-<div class = subwrapper>
-<h2> CNC Proframming to manufacture gears on 3 axis CNC-VMC </h2>
-Guide: Prof. N Ramakrishnan
+<span id="about"></span>
+<div id="content-1" style="width:100%; background-color:white;">
+    <div class="content" style="color: #777;">
+      <h2>CNC Programming to manufacture gears on 3 axis CNC-VMC</h2>
+	  <center><span style="font-size:16px; font-weight:bold; color:#5e9516;">Indian Institute of Technology, Gandhinagar</span></center>
+		<p>
+			Guide: Prof. N Ramakrishnan
 <br><br>
 Traditionally gears are manufactured using gear hobbing and shaping which require 
 special machines. Gears are not manufactured on a 3 axis vertical milling centre (VMC) as 
@@ -31,22 +46,26 @@ there is no feature to program the CNC milling machine to cut involute profiles
  which are an essential part of a gear tooth. 
 This project enables manufacturing of gears on 3 axis CNC-VMC possible, by using CNC milling machine to 
 create involute shapes.<br>
+<center>
 <figure>
-<img src="cnc1.png" alt="Gear profile">
+<img src="images/cnc1.png" alt="Gear profile">
 <figcaption>Fig 1: Gear Profile (involutes)</figcaption>
 </figure>
 <br>
 <figure>
-<img src="cnc2.png">
+<img src="images/cnc2.png">
 <figcaption>Fig 2: Approximation of Involute of circle</figcaption>
 </figure>
 <br>
+</center>
 This was accomplished by approximating the involute of a circle  by circular arcs. 
+<center>
 <br>
 <figure>
-<img src="cnc3.png">
+<img src="images/cnc3.png">
 <figcaption>Fig 3: Tolerancing</figcaption>
 </figure>
+</center>
 <br>
 Tolerancing was used to maintain the quality of approximate profile.
 Varying tolerance range it was possible to program gears for various grades. 
@@ -55,22 +74,24 @@ An algorithm was developed that automatically generated the G-code for the a gea
 Table 1 shows the generated G-code for a single gear tooth
 <br>
 <figure>
-<img src="cnc4.png">
+<img src="images/cnc4.png">
 <figcaption>Table 1: G Code generation</figcaption>
 </figure>
 <br>
-
+<center>
 Single gear tooth simulated using the G-code from table<br>
-<img src="cnc5.png">
+<img src="images/cnc5.png">
 <br>
 Entire gear simulated using  the proposed technique. 
 <br>
-<img src="cnc6.png">
+<img src="images/cnc6.png">
+</center>
 <br>
-<a href="projects.html"> Back </a>
+		</p>
+	  
+	  <div style="clear:both;"></div>
+    </div>
 </div>
-<a href="#linktotop">Top</a>
-</div>
-&copy All rights reserved
+
 </body>
 </html>
