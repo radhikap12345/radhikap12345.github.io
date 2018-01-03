@@ -1,7 +1,7 @@
 filename,name,institute,description,inprogress
 word2vec,Word2Vec using Character n-grams,Stanford University,file=descriptions/word2vec.html,0
 motionplanning,Motion Planning in Unknown Environments,Stanford University,file=descriptions/motionplanning.html,0
-cnc,CNC Programming to manufacture gears on 3 axis CNC-VMC,"Indian Institute of Technology, Gandhinagar",file=descriptions/cnc.html,0
+CNC,CNC Programming to manufacture gears on 3 axis CNC-VMC,"Indian Institute of Technology, Gandhinagar",file=descriptions/cnc.html,0
 dih,Designing for Indian Healthcare,"Indian Institute of Technology, Gandhinagar",file=descriptions/dih.html,0
 MDO,Molecular Dynamic Simulations of Silicon Nanowire,"Indian Institute of Technology, Gandhinagar",file=descriptions/MDO.html,0
 spptd,Solar Paper Pulp Tile Dryer,"Indian Institute of Technology, Gandhinagar",file=descriptions/spptd.html,0
