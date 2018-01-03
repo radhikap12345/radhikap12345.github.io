@@ -159,7 +159,8 @@ img.side_image.ecr {
 }
 
 .readmoreslide {
-	margin-left:50%;
+	margin-left:calc(50% - 45px);
+	width:90px;
 	color:white;
 	background-color:#667788;
 	padding: 10px 20px 10px 20px;
