@@ -1,4 +1,7 @@
 var clickedNavbar = 0;
+var position1;
+var position2;
+var position3;
 
 function loadB() {
     var previousScroll = 0,
@@ -6,9 +9,7 @@ function loadB() {
     
     $('#header-wrap').height($('#header').height());
     
-    var position1 = $('#bgimg-1Placeholder').offset().top + $('#bgimg-1Placeholder').height() + $('#content-1').height() / 2;
-    var position2 = $('#bgimg-2Placeholder').offset().top + $('#bgimg-2Placeholder').height() + $('#content-2').height() / 2;
-    var position3 = $('#bgimg-3Placeholder').offset().top + $('#bgimg-3Placeholder').height() +$('#content-3').height() / 2;
+    layoutchanged();
     
     $(window).scroll(function () {
         var currentScroll = $(this).scrollTop();
@@ -75,6 +76,12 @@ jQuery(function($) {
 function showPopup() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
+}
+
+function layoutchanged() {
+	position1 = $('#bgimg-1Placeholder').offset().top + $('#bgimg-1Placeholder').height() + $('#content-1').height() / 2;
+	position2 = $('#bgimg-2Placeholder').offset().top + $('#bgimg-2Placeholder').height() + $('#content-2').height() / 2;
+	position3 = $('#bgimg-3Placeholder').offset().top + $('#bgimg-3Placeholder').height() +$('#content-3').height() / 2;
 }
 
 $( document ).ready(function() {
